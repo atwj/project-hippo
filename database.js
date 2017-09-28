@@ -12,3 +12,7 @@ var config = {
     // storageBucket: "<BUCKET>.appspot.com",
 };
 firebase.initializeApp(config);
+
+module.exports = {
+    firebase : firebase
+}
