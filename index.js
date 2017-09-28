@@ -5,6 +5,7 @@ const express = require('express')
 const app = express()
 const db = require('./database')
 
+// This function returns some stuff
 app.get('/', function (req, res) {
     var ref = db.firebase.database().ref('messages')
     ref.on('value', function(snapshot){
